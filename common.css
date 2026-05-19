@@ -1,0 +1,339 @@
+/* ============================================================
+   WinStake Labs - Common Stylesheet
+   Shared styles for ALL pages: variables, base, nav, footer.
+   Page-specific styles live in each page's <style> block.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap');
+
+/* CSS variables - single source of truth */
+:root {
+  --bg: #0f0e0c;
+  --bg2: #2c2420;
+  --bg3: #1e1814;
+  --gold: #d4a85a;
+  --gold-bright: #f2ead8;
+  --gold-dim: #a87c3a;
+  --sage: #8a9e7a;
+  --text: #f2ead8;
+  --text-muted: #a09080;
+  --text-dim: #5a4e44;
+  --border: rgba(212, 168, 90, 0.18);
+  --border-gold: rgba(212, 168, 90, 0.35);
+  --glass: rgba(30, 22, 16, 0.55);
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-body: 'Space Grotesk', sans-serif;
+  --font-mono: 'DM Mono', monospace;
+}
+
+/* Reset and base */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.65;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  position: relative;
+}
+a { color: inherit; }
+
+/* ============================================================
+   NAVIGATION (.site-nav)
+   ============================================================ */
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(15, 14, 12, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  padding: 0.9rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-family: var(--font-body);
+}
+.site-nav .nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  text-decoration: none;
+  color: inherit;
+}
+.site-nav .nav-logo img {
+  width: 34px;
+  height: 34px;
+  border-radius: 4px;
+  background: #fff;
+  padding: 1px;
+}
+.site-nav .nav-logo-text {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: 0.04em;
+  color: var(--text);
+}
+.site-nav .nav-logo-text span { color: var(--gold); }
+
+.site-nav .nav-links {
+  display: flex;
+  gap: 1.8rem;
+  list-style: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.site-nav .nav-links li a {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.15s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.site-nav .nav-links li a:hover,
+.site-nav .nav-links li a.active { color: var(--gold); }
+.site-nav .nav-links .stake-link span { color: var(--gold); }
+
+/* External-link arrow for Mission and Tools Hub */
+.site-nav .nav-links li a[href$="mission-en.html"]::after,
+.site-nav .nav-links li a[href$="mission.html"]::after,
+.site-nav .nav-links li a[href$="tools.html"]::after {
+  content: '↗';
+  font-size: 0.85em;
+  margin-left: 0.15em;
+  color: var(--gold-dim);
+  font-weight: 400;
+}
+.site-nav .nav-links li a[href$="mission-en.html"]:hover::after,
+.site-nav .nav-links li a[href$="mission.html"]:hover::after,
+.site-nav .nav-links li a[href$="tools.html"]:hover::after { color: var(--gold); }
+
+.site-nav .lang-switch {
+  display: flex;
+  gap: 4px;
+}
+.site-nav .lang-switch a {
+  padding: 4px 10px;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  transition: all 0.15s;
+}
+.site-nav .lang-switch a.active {
+  border-color: rgba(212, 168, 90, 0.5);
+  color: var(--gold);
+}
+.site-nav .lang-switch a:hover { color: var(--gold); }
+
+.site-nav .mobile-toggle {
+  display: none !important;
+  background: transparent;
+  border: 1px solid var(--border);
+  padding: 6px 8px;
+  cursor: pointer;
+  gap: 4px;
+  flex-direction: column;
+}
+.site-nav .mobile-toggle span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: var(--gold);
+}
+
+@media (max-width: 880px) {
+  .site-nav { padding: 0.7rem 1.2rem; }
+  .site-nav .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+    background: rgba(15, 14, 12, 0.98);
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .site-nav .nav-links.open { display: flex; }
+  .site-nav .mobile-toggle { display: flex !important; }
+}
+
+/* ============================================================
+   FOOTER (.site-footer)
+   ============================================================ */
+.site-footer {
+  margin-top: 4rem;
+  border-top: 1px solid var(--border);
+  padding: 2rem 0 1.5rem;
+  background: rgba(15, 14, 12, 0.6);
+  position: relative;
+  z-index: 2;
+  font-family: var(--font-body);
+}
+.site-footer .footer-top {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--border);
+}
+.site-footer .footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  text-decoration: none;
+  color: inherit;
+}
+.site-footer .footer-logo img {
+  width: 34px;
+  height: 34px;
+  border-radius: 4px;
+  background: #fff;
+  padding: 1px;
+}
+.site-footer .footer-logo-text {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: 0.04em;
+  color: var(--text);
+}
+.site-footer .footer-logo-text span { color: var(--gold); }
+
+.site-footer .social-icons {
+  display: flex;
+  gap: 0.6rem;
+}
+.site-footer .social-link {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: all 0.15s;
+}
+.site-footer .social-link:hover {
+  color: var(--gold);
+  border-color: var(--gold-dim);
+}
+
+.site-footer .footer-cta {
+  margin-left: auto;
+  background: var(--gold);
+  color: var(--bg);
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.75rem 1.6rem;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+.site-footer .footer-cta:hover { background: var(--gold-bright); }
+
+.site-footer .footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.2rem 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+.site-footer .footer-tagline {
+  color: var(--text-dim);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.site-footer .footer-tagline:hover { color: var(--gold-dim); }
+
+@media (max-width: 880px) {
+  .site-footer .footer-top { padding: 0 1.2rem 1.5rem; }
+  .site-footer .footer-cta { margin-left: 0; width: 100%; text-align: center; }
+  .site-footer .footer-bottom { padding: 1.2rem 1.2rem 0; }
+}
+
+/* ============================================================
+   COMMON BUTTONS
+   ============================================================ */
+.btn-primary, .btn-secondary {
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.85rem 1.8rem;
+  text-decoration: none;
+  transition: all 0.15s;
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+}
+.btn-primary {
+  background: var(--gold);
+  color: var(--bg);
+}
+.btn-primary:hover { background: var(--gold-bright); }
+.btn-secondary {
+  border: 1px solid var(--border-gold);
+  color: var(--gold);
+  background: transparent;
+}
+.btn-secondary:hover { background: rgba(212, 168, 90, 0.08); }
+
+/* ============================================================
+   COMMON SECTION HELPERS
+   ============================================================ */
+.section-tag {
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold-dim);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.section-tag::before {
+  content: '// ';
+  color: var(--sage);
+}
+
+/* Reveal animation - common across pages */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

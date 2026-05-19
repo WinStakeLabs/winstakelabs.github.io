@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ua" data-page="mission" data-lang="ua">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Наша Місія · WinStake Labs</title>
+<link rel="stylesheet" href="common.css">
+<meta name="description" content="Місія WinStake Labs: реабілітаційний центр для диких котів у Запоріжжі. 10% прибутку валідатора йдуть на цю довгострокову мету.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://winstakelabs.com/mission.html">
+<meta property="og:title" content="Наша Місія · WinStake Labs">
+<meta property="og:description" content="Реабілітаційний центр для диких котів у Запоріжжі. 10% прибутку валідатора йдуть на цю довгострокову мету.">
+<meta property="og:image" content="https://winstakelabs.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://winstakelabs.com/og-image.png">
+<link rel="icon" type="image/png" href="/winstakelabs.png">
+<link rel="apple-touch-icon" href="/winstakelabs_w.png">
+
+<style>
+
+/* NAV */
+/* HERO */
+.mission-hero{padding:5rem 2rem 3rem;text-align:center;position:relative;overflow:hidden;}
+.mission-hero::before{content:'';position:absolute;top:-60px;left:50%;transform:translateX(-50%);width:700px;height:400px;background:radial-gradient(ellipse,rgba(138,158,122,0.12) 0%,transparent 65%);pointer-events:none;}
+
+.mission-hero h1{font-family:'Bebas Neue', sans-serif;font-size:clamp(2.5rem,7vw,5rem);font-weight:700;letter-spacing:.05em;text-transform:uppercase;line-height:1.05;margin-bottom:1rem;}
+.mission-hero h1 em{color:var(--gold);font-style:normal;display:block;}
+.mission-hero .lead{font-size:1.05rem;color:var(--text-muted);max-width:600px;margin:0 auto;line-height:1.8;}
+
+/* PHOTO */
+.photo-block{max-width:800px;margin:3rem auto;padding:0 2rem;position:relative;}
+.photo-block img{width:100%;border-radius:4px;display:block;object-fit:cover;max-height:500px;}
+.photo-caption{text-align:center;font-size:0.72rem;color:var(--text-dim);letter-spacing:.12em;text-transform:uppercase;margin-top:.8rem;font-family:'Bebas Neue', sans-serif;}
+
+/* CONTENT */
+.content{max-width:780px;margin:0 auto;padding:2rem 2rem 6rem;}
+.block{margin-bottom:3.5rem;}
+.block-tag{font-family:'Bebas Neue', sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;color:var(--sage);text-transform:uppercase;margin-bottom:.6rem;}
+.block h2{font-family:'Bebas Neue', sans-serif;font-size:clamp(1.4rem,3vw,2.2rem);font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--text);margin-bottom:1.2rem;line-height:1.2;}
+.block h2 em{color:var(--gold);font-style:normal;}
+.block p{font-size:0.97rem;color:var(--text-muted);line-height:1.9;margin-bottom:1rem;}
+.block p strong{color:var(--text);font-weight:500;}
+
+/* Steps */
+.steps{margin:1.5rem 0;display:flex;flex-direction:column;gap:1.2rem;}
+.step{display:flex;gap:1.2rem;padding:1.2rem 1.5rem;background:rgba(255,245,235,0.03);border:1px solid rgba(212,168,90,0.12);border-left:3px solid var(--sage);}
+.step-num{font-family:'Bebas Neue', sans-serif;font-size:1.6rem;font-weight:700;color:var(--gold);line-height:1;flex-shrink:0;width:2rem;text-align:center;}
+.step-body{flex:1;}
+.step-title{font-family:'Bebas Neue', sans-serif;font-size:.95rem;font-weight:700;letter-spacing:.08em;color:var(--text);text-transform:uppercase;margin-bottom:.3rem;}
+.step-text{font-size:.87rem;color:var(--text-muted);line-height:1.75;}
+
+/* Quote */
+.quote-block{margin:3rem 0;padding:2rem 2.5rem;border-left:3px solid var(--gold);background:rgba(212,168,90,0.04);text-align:left;}
+.quote-block p{font-family:'Bebas Neue', sans-serif;font-size:1.2rem;font-weight:600;letter-spacing:.04em;color:var(--text);line-height:1.6;margin:0;}
+.quote-block p strong{color:var(--gold);}
+
+/* CTA */
+.cta-block{text-align:center;padding:3rem 2rem;background:rgba(138,158,122,0.05);border:1px solid rgba(138,158,122,0.18);border-radius:4px;margin-top:3rem;}
+.cta-block p{font-size:.95rem;color:var(--text-muted);line-height:1.8;margin-bottom:1.5rem;}
+.btn{display:inline-block;padding:.9rem 2.5rem;background:linear-gradient(135deg,#d4a85a,#8a5e1e);color:#1e1610;font-family:'Bebas Neue', sans-serif;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;transition:box-shadow .2s;}
+.btn:hover{box-shadow:0 0 24px rgba(212,168,90,0.4);}
+
+/* FOOTER */
+
+@media(max-width:700px){
+
+  .mission-hero{padding:4rem 1.2rem 2rem;}
+  .content{padding:1.5rem 1.2rem 4rem;}
+  .step{flex-direction:column;gap:.6rem;}
+  .quote-block{padding:1.5rem;}
+}
+
+</style>
+</head>
+<body>
+
+<div id="site-nav-placeholder"></div>
+
+<!-- HERO -->
+<div class="mission-hero">
+  <div class="section-tag">Mission</div>
+  <h1>Наша<em>Місія</em></h1>
+  <p class="lead">Привіт! Я хочу поділитися з вами історією, яка виходить за межі валідаторів та технологій. Це історія про відповідальність, любов до природи та мрію, яка крок за кроком стає реальністю.</p>
+</div>
+
+<!-- VATRA PHOTO -->
+<div class="photo-block">
+  <img src="vatra.jpg" alt="Vatra - сервал">
+  <div class="photo-caption">Ватра - моя дівчинка-сервал 🌿</div>
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+
+  <div class="block">
+    <div class="block-tag">// Проблема</div>
+    <h2>Чому це <em>важливо?</em></h2>
+    <p>В Україні ринок екзотичних тварин часто нагадує «сіру зону». Люди купують диких кішок - рисей, каракалів, сервалів чи оцелотів - заради статусу або гарної картинки, очікуючи від них поведінки домашнього кота.</p>
+    <p>Але дика тварина залишається дикою. Через брак знань, неправильне харчування та неналежні умови, тварини отримують травми, хворіють, а згодом стають непотрібними. Опинившись на вулиці, вони приречені.</p>
+  </div>
+
+  <div class="block">
+    <div class="block-tag">// Особистий досвід</div>
+    <h2>Моя <em>Ватра</em></h2>
+    <p>Я знаю це не з чуток. У моєму домі живе Ватра - моя неймовірна дівчинка-сервал. Вона соціалізована, вихована і є повноцінним членом моєї родини. Але щодня, дивлячись у її очі, я бачу ту колосальну різницю між домашньою кішкою та диким хижаком.</p>
+    <p>Я знаю, як забезпечити їй гідне життя, і я розумію, скільки зусиль і часу це потребує. Моя Ватра та спілкування з іншими власниками таких тварин надихнули мене дати шанс іншим - тим, хто залишився без дому, хто постраждав від людської недбалості або чиє здоров'я було підірване неправильним доглядом.</p>
+  </div>
+
+  <div class="block">
+    <div class="block-tag">// План реалізації</div>
+    <h2>Кроки до <em>реабілітаційного центру</em></h2>
+    <p><strong>10% від усього прибутку мого проекту</strong> я спрямовую у фонд майбутнього Центру реабілітації та притулку для диких кішок. Наші кроки:</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-title">Територія</div>
+          <div class="step-text">Зараз ми працюємо над найскладнішим етапом - викупом території під центр у Запорізькій області.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-title">Інфраструктура</div>
+          <div class="step-text">Ми проєктуємо просторі вуличні вольєри, що максимально наближені до природного середовища, а також теплі зимові приміщення для видів з інших кліматичних зон. У нас вже є домовленість з подібним центром у Польщі, який допоможе в проектуванні і будівництві вольєрів.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-title">Перші мешканці</div>
+          <div class="step-text">На старті центр зможе прийняти та забезпечити професійний догляд для 5–10 диких котів, залежно від того, чи ці тварини були в парі, чи самотні.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="block-tag">// Особиста місія</div>
+    <h2>Це - <em>моє життя</em></h2>
+    <p>Для мене це не благодійність. Це моя особиста місія і реалізація як людини. Я хочу, щоб кожна дика кішка, яка через людські помилки втратила свій дім, отримала безпечне місце, професійну допомогу та право на життя в повазі до її природи.</p>
+
+    <div class="quote-block">
+      <p>"10% від мого прибутку - на порятунок диких кішок. <strong>Ми будуємо фінанси майбутнього, щоб захистити тих, хто не має голосу.</strong>"</p>
+    </div>
+  </div>
+
+  <div class="cta-block">
+    <p>Підтримай місію - делегуй свій стейк валідатору WinStake Labs.<br>Кожен делегований SOL наближає відкриття реабілітаційного центру.</p>
+    <a href="index.html#stake" class="btn">Делегувати SOL</a>
+  </div>
+
+</div>
+
+<div id="site-footer-placeholder"></div>
+
+<script src="site.js" defer></script>
+</body>
+</html>

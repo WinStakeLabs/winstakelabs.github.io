@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" data-page="security" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Security and Responsibility · WinStake Labs</title>
+<link rel="stylesheet" href="common.css">
+<meta name="description" content="WinStake Labs security and responsibility. Hardware Security Modules, DDoS protection, bare-metal isolation, failover, real-time monitoring, network compliance.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://winstakelabs.com/security.html">
+<meta property="og:title" content="Security and Responsibility · WinStake Labs">
+<meta property="og:description" content="How we secure our validator infrastructure: HSM, DDoS protection, bare-metal isolation, real-time monitoring.">
+<meta property="og:image" content="https://winstakelabs.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://winstakelabs.com/og-image.png">
+<link rel="icon" type="image/png" href="/winstakelabs.png">
+<link rel="apple-touch-icon" href="/winstakelabs_w.png">
+
+<style>
+
+/* Nav */
+
+@media (max-width: 880px){}
+
+/* Main */
+main{flex:1;max-width:780px;margin:0 auto;padding:4rem 2rem;width:100%;}
+
+h1{font-family:var(--font-display);font-weight:700;font-size:clamp(2rem,4.5vw,3rem);letter-spacing:0.02em;line-height:1.1;margin-bottom:1.5rem;}
+h1 em{font-style:normal;color:var(--gold);}
+.intro{font-size:1.05rem;color:var(--text);line-height:1.8;margin-bottom:2.5rem;}
+
+/* Items grid */
+.sec-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border);margin:2rem 0;border:1px solid var(--border);}
+.sec-item{background:var(--bg);padding:1.6rem 1.5rem;}
+.sec-item-tag{font-family:var(--font-display);font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold-dim);margin-bottom:0.6rem;}
+.sec-item-title{font-family:var(--font-display);font-weight:600;font-size:1.1rem;color:var(--gold);margin-bottom:0.6rem;letter-spacing:0.02em;}
+.sec-item-text{font-size:0.92rem;color:var(--text-muted);line-height:1.7;}
+
+@media (max-width:680px){
+  .sec-grid{grid-template-columns:1fr;}
+  main{padding:3rem 1.5rem;}
+}
+
+/* Closing block */
+.closing{margin-top:2.5rem;padding:1.8rem 2rem;border:1px solid var(--border-gold);border-left:3px solid var(--gold);background:rgba(212,168,90,0.04);}
+.closing p{font-size:1rem;line-height:1.8;color:var(--text);}
+
+/* Identity */
+.identity{margin-top:3rem;padding:2rem;background:var(--bg2);border:1px solid var(--border);}
+.identity-row{display:flex;flex-direction:column;gap:0.4rem;margin-bottom:1.4rem;}
+.identity-row:last-child{margin-bottom:0;}
+.identity-label{font-family:var(--font-display);font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold-dim);}
+.identity-name{font-family:var(--font-display);font-weight:600;font-size:1.2rem;color:var(--gold-bright);letter-spacing:0.02em;}
+.identity-sub{font-size:0.9rem;color:var(--text-muted);margin-top:0.2rem;}
+.identity-value{font-family:'DM Mono',monospace;font-size:0.78rem;color:var(--text);word-break:break-all;background:var(--bg);padding:0.7rem 1rem;border-left:2px solid var(--gold-dim);}
+
+/* Footer */
+
+</style>
+</head>
+<body>
+
+<div id="site-nav-placeholder"></div>
+
+<main>
+  <div class="section-tag">Security First</div>
+  <h1>SECURITY AND <em>RESPONSIBILITY</em></h1>
+
+  <p class="intro">At WinStake Labs, we uphold high standards of security, transparency, and operational reliability. Our validator infrastructure is professionally maintained and constantly monitored to ensure uninterrupted uptime and optimal performance.</p>
+
+  <div class="sec-grid">
+    <div class="sec-item">
+      <div class="sec-item-tag">Key Protection</div>
+      <div class="sec-item-title">HSM and Cold Storage</div>
+      <div class="sec-item-text">Hardware Security Module for key protection. Exclusively personal control. No third-party access delegation.</div>
+    </div>
+    <div class="sec-item">
+      <div class="sec-item-tag">Network Defense</div>
+      <div class="sec-item-title">DDoS Protection</div>
+      <div class="sec-item-text">Multi-layer firewalls. Traffic filtering at the data center and network perimeter level.</div>
+    </div>
+    <div class="sec-item">
+      <div class="sec-item-tag">Hardware Isolation</div>
+      <div class="sec-item-title">Bare-Metal Only</div>
+      <div class="sec-item-text">High-performance dedicated hardware with strict access controls and regular system audits. No virtual environments.</div>
+    </div>
+    <div class="sec-item">
+      <div class="sec-item-tag">Redundancy</div>
+      <div class="sec-item-title">Failover and Backup</div>
+      <div class="sec-item-text">Backup and failover strategies are in place to mitigate risks. Automatic server switching avoids outages.</div>
+    </div>
+    <div class="sec-item">
+      <div class="sec-item-tag">Real-Time Monitoring</div>
+      <div class="sec-item-title">Anomaly Detection</div>
+      <div class="sec-item-text">Automated monitoring tools detect anomalies, prevent downtime, and alert our team in real time.</div>
+    </div>
+    <div class="sec-item">
+      <div class="sec-item-tag">Compliance</div>
+      <div class="sec-item-title">Network Best Practices</div>
+      <div class="sec-item-text">We follow all Solana network upgrades and best practices to ensure compliance and long-term stability.</div>
+    </div>
+  </div>
+
+  <div class="closing">
+    <p>By delegating to WinStake Labs, you are staking with a validator that prioritizes network integrity, your rewards, and long-term ecosystem trust.</p>
+  </div>
+
+  <div class="identity">
+    <div class="identity-row">
+      <div class="identity-name">WinStake Labs</div>
+      <div class="identity-sub">Solana Validator · Mainnet since September 2022</div>
+    </div>
+    <div class="identity-row">
+      <div class="identity-label">Identity</div>
+      <div class="identity-value">2nhGaJvR17TeytzJVajPfABHQcAwinKoCG8F69gRdQot</div>
+    </div>
+    <div class="identity-row">
+      <div class="identity-label">Vote Account</div>
+      <div class="identity-value">mNyQrNRYAuL2CwNCGmCsmwj9EcG88Sf8hs5rCirZaUr</div>
+    </div>
+  </div>
+</main>
+
+<div id="site-footer-placeholder"></div>
+
+<script src="site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!--
+  WinStake Labs - Shared Nav
+  Loaded by JS on every page. EDIT HERE to change nav on entire site.
+  Lang switcher and active link are set after load via data-page and data-lang attributes on <html>.
+-->
+<nav class="site-nav">
+  <a href="/" class="nav-logo" data-link-home>
+    <img src="winstakelabs_w.png" alt="WinStake Labs">
+    <span class="nav-logo-text">WinStake <span>Labs</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="/#about" data-nav="about" data-label-en="About" data-label-ua="Про мене">About</a></li>
+    <li><a href="/#labs" data-nav="labs" data-label-en="Infrastructure" data-label-ua="Інфраструктура">Infrastructure</a></li>
+    <li><a href="/#network" data-nav="network" data-label-en="Network" data-label-ua="Мережа">Network</a></li>
+    <li><a href="/#security" data-nav="security" data-label-en="Security" data-label-ua="Безпека">Security</a></li>
+    <li><a href="/#stake" class="stake-link" data-nav="stake" data-label-en="Stake" data-label-ua="Стейк"><span>🪶</span> Stake</a></li>
+    <li><a href="mission-en.html" data-nav="mission" data-label-en="Mission" data-label-ua="Місія" data-href-en="mission-en.html" data-href-ua="mission.html">Mission</a></li>
+    <li><a href="tools.html" data-nav="tools">Tools Hub</a></li>
+  </ul>
+  <div class="lang-switch">
+    <a href="index.html" data-lang-target="en">EN</a>
+    <a href="index-ua.html" data-lang-target="ua">UA</a>
+  </div>
+  <button type="button" class="mobile-toggle" onclick="document.querySelector('.site-nav .nav-links').classList.toggle('open');"><span></span><span></span><span></span></button>
+</nav>
