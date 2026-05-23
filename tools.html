@@ -98,19 +98,18 @@ body::before {
   <div class="section-tag">Under-the-Radar Community Resource</div>
   <h1>SOLANA <em>TOOLS HUB</em></h1>
   <p class="hero-sub">A collection of tools built by validators, for validators. Mostly under-the-radar, made by the community itself, not promoted in mainstream channels. Many of these you won't find aggregated anywhere else. Gathered over years of running a node, ranked by what we actually use day-to-day.</p>
-  <p class="hero-sub" style="margin-top:-1.2rem;font-size:0.9rem;color:var(--text-dim);font-style:italic;">60 tools across 10 categories. Verified, curated, and kept fresh.</p>
 
   <div class="hero-stats">
     <div class="hero-stat">
-      <div class="hero-stat-num">60</div>
+      <div class="hero-stat-num">75+</div>
       <div class="hero-stat-label">Tools</div>
     </div>
     <div class="hero-stat">
-      <div class="hero-stat-num">9</div>
+      <div class="hero-stat-num">11</div>
       <div class="hero-stat-label">Categories</div>
     </div>
     <div class="hero-stat">
-      <div class="hero-stat-num">40+</div>
+      <div class="hero-stat-num">60+</div>
       <div class="hero-stat-label">Community Built</div>
     </div>
   </div>
@@ -127,25 +126,26 @@ body::before {
     <button class="filter-btn active" data-cat="all">All</button>
     <button class="filter-btn" data-cat="analytics">Analytics</button>
     <button class="filter-btn" data-cat="alerts">Alerts</button>
-    <button class="filter-btn" data-cat="pools">Pools & LSTs</button>
+    <button class="filter-btn" data-cat="network">Network Analytics</button>
+    <button class="filter-btn" data-cat="pools">Pools &amp; LSTs</button>
     <button class="filter-btn" data-cat="calc">Calculators</button>
     <button class="filter-btn" data-cat="delegation">Delegation</button>
     <button class="filter-btn" data-cat="operator">Operator</button>
     <button class="filter-btn" data-cat="alpenglow">Alpenglow</button>
-    <button class="filter-btn" data-cat="special">Special</button>
-    <button class="filter-btn" data-cat="established">Established</button>
+    <button class="filter-btn" data-cat="heavyweights">Heavyweights</button>
+    <button class="filter-btn" data-cat="foundation">Foundation</button>
     <button class="filter-btn" data-cat="learning">Learning</button>
   </div>
-  <span class="visible-count" id="visibleCount">60 tools</span>
+  <span class="visible-count" id="visibleCount">77 tools</span>
 </div>
 
 <div class="empty" id="emptyState"><p>// No tools match your search.</p></div>
 
-<section class="category reveal reveal" data-cat="analytics">
+<section class="category reveal" data-cat="analytics">
   <div class="cat-header">
     <span class="cat-num">01</span>
     <span class="cat-title">Validator Analytics</span>
-    <span class="cat-count">22 tools</span>
+    <span class="cat-count">17 tools</span>
   </div>
   <div class="tools-grid">
       <a href="https://app.vx.tools/leaderboards/income" target="_blank" rel="noopener" class="tool-card" data-cat="analytics" data-name="vortex income leaderboard earnings block revenue">
@@ -154,7 +154,7 @@ body::before {
           <div class="tool-name">Vortex</div>
         </div>
         <div class="tool-desc">Income leaderboard ranked by real block earnings. Drill down into per-block data to see exactly where a validator's revenue comes from.</div>
-        <div class="tool-builder">Vortex team </div>
+        <div class="tool-builder community">starry - Contributor <span class="community-badge">community</span></div>
       </a>
       <a href="https://sandwiched.me/validators" target="_blank" rel="noopener" class="tool-card" data-cat="analytics" data-name="sandwiched mev sandwich attack behavior scheduler">
         <div class="tool-head">
@@ -162,161 +162,121 @@ body::before {
           <div class="tool-name">Sandwiched.me</div>
         </div>
         <div class="tool-desc">Tracks validator MEV behavior: sandwich attacks, aggressive schedulers. Solana Foundation reportedly uses this data when assessing node quality.</div>
-        <div class="tool-builder community">The Ghost Team <span class="community-badge">community</span></div>
+        <div class="tool-builder community">Ghost Validator <span class="community-badge">community</span></div>
       </a>
-      <a href="https://trillium.so/" target="_blank" rel="noopener" class="tool-card" data-cat="analytics" data-name="trillium epoch dashboard api validator metrics">
+      <a href="https://trillium.so/" target="_blank" rel="noopener" class="tool-card" data-cat="analytics" data-name="trillium live validator epoch dashboard metrics json api">
         <div class="tool-head">
           <span class="tool-favicon-slot"></span>
-          <div class="tool-name">Trillium</div>
+          <div class="tool-name">Trillium Live</div>
         </div>
         <div class="tool-desc">Live validator and epoch dashboard. Wide surface of metrics in one place, from the author of one of the most complete JSON APIs for Solana epoch data.</div>
-        <div class="tool-builder community">Trillium <span class="community-badge">community</span></div>
+        <div class="tool-builder community">Trillium Validator <span class="community-badge">community</span></div>
       </a>
-      <a href="https://dashboards.validblocks.com/svp" target="_blank" rel="noopener" class="tool-card" data-cat="analytics" data-name="validblocks svp profitability stats monitoring">
+      <a href="https://dashboards.validblocks.com" target="_blank" rel="noopener" class="tool-card" data-cat="analytics" data-name="validblocks dashboards validators profitability monitoring stats">
         <div class="tool-head">
           <span class="tool-favicon-slot"></span>
-          <div class="tool-name">ValidBlocks SVP</div>
+          <div class="tool-name">ValidBlocks dashboards</div>
         </div>
-        <div class="tool-desc">Solana Validators Profitability dashboard. Comprehensive validator stats and monitoring, powered by Trillium data.</div>
-        <div class="tool-builder community">ValidBlocks <span class="community-badge">community</span></div>
+        <div class="tool-desc">Multiple validator dashboards in one place, including Solana Validators Profitability. Comprehensive validator stats and monitoring across several views.</div>
+        <div class="tool-builder community">Valid Blocks Validator <span class="community-badge">community</span></div>
       </a>
-      <a href="https://ibrl.wtf/" target="_blank" rel="noopener" class="tool-card" data-cat="analytics" data-name="ibrl score block building slot timing vote packing">
-        <div class="tool-head">
-          <span class="tool-favicon-slot"></span>
-          <div class="tool-name">IBRL Analytics</div>
-        </div>
-        <div class="tool-desc">Analyzes block-building behavior using slot-level data. Produces an IBRL score plus separate scores for slot timing, vote packing and non-vote packing.</div>
-        <div class="tool-builder">Jito </div>
-      </a>
-      <a href="https://spex.stakingfacilities.com/" target="_blank" rel="noopener" class="tool-card" data-cat="analytics" data-name="spex staking facilities rewards mev credits slot">
+      <a href="https://spex.stakingfacilities.com/" target="_blank" rel="noopener" class="tool-card" data-cat="analytics" data-name="spex rewards block mev vote credits slot duration performance">
         <div class="tool-head">
           <span class="tool-favicon-slot"></span>
           <div class="tool-name">SPEX</div>
         </div>
         <div class="tool-desc">Rewards per block, MEV per block, vote credits, slot duration. Deep performance analytics for individual validators.</div>
-        <div class="tool-builder">Staking Facilities </div>
+        <div class="tool-builder community">Staking Facilities Validator <span class="community-badge">community</span></div>
       </a>
-      <a href="https://svt.one/dashboard" target="_blank" rel="noopener" class="tool-card" data-cat="analytics" data-name="svt toolkit dashboard metrics stake jpool">
+      <a href="https://simd-votes.stakingfacilities.com/" target="_blank" rel="noopener" class="tool-card" data-cat="analytics" data-name="simd votes status governance validator improvement document">
         <div class="tool-head">
           <span class="tool-favicon-slot"></span>
-          <div class="tool-name">SVT</div>
+          <div class="tool-name">SIMD Vote Status</div>
         </div>
-        <div class="tool-desc">Solana Validator Toolkit dashboard with validator metrics and stake data.</div>
-        <div class="tool-builder community">JPool <span class="community-badge">community</span></div>
+        <div class="tool-desc">Live status of validator votes on Solana Improvement Documents. Track governance participation per validator.</div>
+        <div class="tool-builder community">Staking Facilities Validator <span class="community-badge">community</span></div>
       </a>
-      <a href="https://sonda.network/" target="_blank" rel="noopener" class="tool-card" data-cat="analytics" data-name="sonda decentralization infrastructure datacenter">
+<a href="https://topvalidators.app/" target="_blank" rel="noopener" class="tool-card" data-cat="analytics" data-name="topvalidators dashboard ranking leapfrog">
         <div class="tool-head">
           <span class="tool-favicon-slot"></span>
-          <div class="tool-name">Sonda</div>
+          <div class="tool-name">TopValidators</div>
         </div>
-        <div class="tool-desc">Decentralization and infrastructure metrics. Lets validators assess how decentralized their setup is relative to the rest of the network.</div>
-        <div class="tool-builder community">Solya Validator <span class="community-badge">community</span></div>
+        <div class="tool-desc">Validator ranking and analytics dashboard.</div>
+        <div class="tool-builder community">Leapfrog Systems Validator <span class="community-badge">community</span></div>
       </a>
-      <a href="https://slashr.dev/" target="_blank" rel="noopener" class="tool-card" data-cat="analytics" data-name="slashr incident delinquency missed votes ethereum sui cosmos">
+      <a href="https://1000x.sh/validators" target="_blank" rel="noopener" class="tool-card" data-cat="analytics" data-name="1000x validators dashboard analytics">
         <div class="tool-head">
           <span class="tool-favicon-slot"></span>
-          <div class="tool-name">Slashr</div>
+          <div class="tool-name">1000x validators dashboard</div>
         </div>
-        <div class="tool-desc">Live validator incident feed: delinquency, missed votes. Covers Solana, Ethereum, Sui and Cosmos.</div>
-        <div class="tool-builder community">Slashr <span class="community-badge">community</span></div>
+        <div class="tool-desc">Validator dashboard with custom analytics and rankings.</div>
+        <div class="tool-builder community">1000X.sh Validator <span class="community-badge">community</span></div>
       </a>
-      <a href="https://parafi.tech/solana/network-stats" target="_blank" rel="noopener" class="tool-card" data-cat="analytics" data-name="parafi network stats dashboard">
-        <div class="tool-head">
-          <span class="tool-favicon-slot"></span>
-          <div class="tool-name">Parafi Network Stats</div>
-        </div>
-        <div class="tool-desc">Solana network statistics dashboard with validator and network-level data.</div>
-        <div class="tool-builder">Parafi </div>
-      </a>
-      <a href="https://pools-adviser.lumlabs.io/" target="_blank" rel="noopener" class="tool-card" data-cat="analytics" data-name="pools adviser delegator compare stake pools validators">
+      <a href="https://pools-adviser.lumlabs.io/" target="_blank" rel="noopener" class="tool-card" data-cat="analytics" data-name="pools adviser stake pool comparison delegators side by side">
         <div class="tool-head">
           <span class="tool-favicon-slot"></span>
           <div class="tool-name">Pools Adviser</div>
         </div>
         <div class="tool-desc">Helps delegators choose where to stake by comparing stake pools and validators side by side.</div>
-        <div class="tool-builder community">Lum Labs <span class="community-badge">community</span></div>
+        <div class="tool-builder community">Lum Labs Validator <span class="community-badge">community</span></div>
       </a>
-      <a href="https://explorer.jito.wtf/" target="_blank" rel="noopener" class="tool-card" data-cat="analytics" data-name="jito explorer bundles tips mev flows block">
-        <div class="tool-head">
-          <span class="tool-favicon-slot"></span>
-          <div class="tool-name">Jito Explorer</div>
-        </div>
-        <div class="tool-desc">Block explorer focused on Jito-related activity: bundles, tips, MEV flows.</div>
-        <div class="tool-builder">Jito Labs </div>
-      </a>
-      <a href="https://www.solfees.fyi/" target="_blank" rel="noopener" class="tool-card" data-cat="analytics" data-name="solfees priority fees per block historical">
+      <a href="https://www.solfees.fyi/" target="_blank" rel="noopener" class="tool-card" data-cat="analytics" data-name="solfees priority fees per block historical breakdown">
         <div class="tool-head">
           <span class="tool-favicon-slot"></span>
           <div class="tool-name">SolFees</div>
         </div>
         <div class="tool-desc">Tracks priority fees on Solana with per-block and historical breakdowns.</div>
-        <div class="tool-builder community">SolFees <span class="community-badge">community</span></div>
+        <div class="tool-builder community">Ronny Haase <span class="community-badge">community</span></div>
       </a>
-      <a href="https://marisam.vercel.app/" target="_blank" rel="noopener" class="tool-card" data-cat="analytics" data-name="marisam marinade sfdp stake tracker">
+      <a href="https://marisam.vercel.app/" target="_blank" rel="noopener" class="tool-card" data-cat="analytics" data-name="marinade validator tracker sfdp stake marisam pigs in blankets">
         <div class="tool-head">
           <span class="tool-favicon-slot"></span>
-          <div class="tool-name">MariSam</div>
+          <div class="tool-name">Marinade Validator Tracker</div>
         </div>
         <div class="tool-desc">Marinade validator tracker with SFDP stake tracking. Useful for validators tracking their own SFDP status.</div>
-        <div class="tool-builder community">Pigs in Blankets <span class="community-badge">community</span></div>
+        <div class="tool-builder community">Pigs in Blankets Validator <span class="community-badge">community</span></div>
       </a>
-      <a href="https://www.solanahcl.org/" target="_blank" rel="noopener" class="tool-card" data-cat="analytics" data-name="solana hcl hardware compatibility list mainnet">
+      <a href="https://www.solanahcl.org/" target="_blank" rel="noopener" class="tool-card" data-cat="analytics" data-name="solana hcl hardware compatibility list mainnet validator operator info">
         <div class="tool-head">
           <span class="tool-favicon-slot"></span>
           <div class="tool-name">Solana HCL</div>
         </div>
-        <div class="tool-desc">Hardware Compatibility List for running a Solana mainnet validator. Reference for what hardware actually works in production.</div>
-        <div class="tool-builder community">community <span class="community-badge">community</span></div>
+        <div class="tool-desc">Hardware Compatibility List for Solana mainnet validators and other useful operator information.</div>
+        <div class="tool-builder community">ferric | ax | Matthias | Andrebo | Dhruvsol <span class="community-badge">community</span></div>
       </a>
-      <a href="https://www.wenfiredancer.com/" target="_blank" rel="noopener" class="tool-card" data-cat="analytics" data-name="firedancer client adoption validator stake version">
-        <div class="tool-head">
-          <span class="tool-favicon-slot"></span>
-          <div class="tool-name">Wen Firedancer</div>
-        </div>
-        <div class="tool-desc">Real-time tracker of Firedancer validator client adoption. Shows what percent of stake runs Firedancer and which validators have switched.</div>
-        <div class="tool-builder community">H2O Nodes <span class="community-badge">community</span></div>
-      </a>
-      <a href="https://simd-votes.stakingfacilities.com/" target="_blank" rel="noopener" class="tool-card" data-cat="analytics" data-name="simd vote status governance alpenglow emissions">
-        <div class="tool-head">
-          <span class="tool-favicon-slot"></span>
-          <div class="tool-name">SIMD Vote Status</div>
-        </div>
-        <div class="tool-desc">Live status of validator votes on Solana Improvement Documents. Track governance decisions like Alpenglow, market-based emissions, block revenue distribution.</div>
-        <div class="tool-builder">Staking Facilities </div>
-      </a>
-      <a href="https://choplet.dev/" target="_blank" rel="noopener" class="tool-card" data-cat="analytics" data-name="choplet validator applet monitoring uptime alerts blinklet solana actions">
-        <div class="tool-head">
-          <span class="tool-favicon-slot"></span>
-          <div class="tool-name">Choplet</div>
-        </div>
-        <div class="tool-desc">Validator monitoring with real-time metrics, uptime tracking and instant alerts. Includes Blinklet, a no-code platform for creating Solana Actions.</div>
-        <div class="tool-builder community">Choplet <span class="community-badge">community</span></div>
-      </a>
-      <a href="https://github.com/DeepStakeSol/deepstake-widget" target="_blank" rel="noopener" class="tool-card" data-cat="analytics" data-name="deepstake widget embeddable staking open source">
-        <div class="tool-head">
-          <span class="tool-favicon-slot"></span>
-          <div class="tool-name">DeepStake Widget</div>
-        </div>
-        <div class="tool-desc">Embeddable widget that lets validators show staking info on their own websites. Open source.</div>
-        <div class="tool-builder community">DeepStake Validator <span class="community-badge">community</span></div>
-      </a>
-      <a href="https://ssr.ragged.me/" target="_blank" rel="noopener" class="tool-card" data-cat="analytics" data-name="ssr ragged validator ip overlap historical decentralization">
-        <div class="tool-head">
-          <span class="tool-favicon-slot"></span>
-          <div class="tool-name">SSR</div>
-        </div>
-        <div class="tool-desc">Visual mapping of validator overlap by IP address. Current data may be limited, but historical records are available.</div>
-        <div class="tool-builder community">Ragged <span class="community-badge">community</span></div>
-      </a>
-      <a href="https://dev.blockline.sh/validator-ranking" target="_blank" rel="noopener" class="tool-card" data-cat="analytics" data-name="blockline validator ranking wallet concentration leader slot poh">
+      <a href="https://dev.blockline.sh/validator-ranking" target="_blank" rel="noopener" class="tool-card" data-cat="analytics" data-name="blockline validator ranking wallet concentration leader slot poh soltop">
         <div class="tool-head">
           <span class="tool-favicon-slot"></span>
           <div class="tool-name">Blockline Validator Ranking</div>
         </div>
         <div class="tool-desc">Wallet-to-validator concentration tracker. Identifies wallets that consistently land transactions when one specific validator is leading. Reconstructed at PoH tick precision.</div>
-        <div class="tool-builder community">Blockline <span class="community-badge">community</span></div>
+        <div class="tool-builder community">soltop.sh Validator <span class="community-badge">community</span></div>
       </a>
-      <a href="https://validator-transparency-dashboard.vercel.app/" target="_blank" rel="noopener" class="tool-card" data-cat="analytics" data-name="validator transparency dashboard open metrics">
+      <a href="https://www.wenfiredancer.com/" target="_blank" rel="noopener" class="tool-card" data-cat="analytics" data-name="wen firedancer validator client adoption tracker real time">
+        <div class="tool-head">
+          <span class="tool-favicon-slot"></span>
+          <div class="tool-name">Wen Firedancer</div>
+        </div>
+        <div class="tool-desc">Real-time tracker of Firedancer validator client adoption. Shows what percent of stake is on Firedancer.</div>
+        <div class="tool-builder community">H2O Nodes Validator <span class="community-badge">community</span></div>
+      </a>
+      <a href="https://solsharing.com/" target="_blank" rel="noopener" class="tool-card" data-cat="analytics" data-name="validator fee sharing dashboard solsharing h2o nodes">
+        <div class="tool-head">
+          <span class="tool-favicon-slot"></span>
+          <div class="tool-name">Validator Fee Sharing Dashboard</div>
+        </div>
+        <div class="tool-desc">Dashboard tracking validator fee sharing programs across Solana.</div>
+        <div class="tool-builder community">H2O Nodes Validator <span class="community-badge">community</span></div>
+      </a>
+      <a href="https://ssr.ragged.me/" target="_blank" rel="noopener" class="tool-card" data-cat="analytics" data-name="solana sybil research ssr ragged validator ip overlap historical">
+        <div class="tool-head">
+          <span class="tool-favicon-slot"></span>
+          <div class="tool-name">Solana Sybil Research</div>
+        </div>
+        <div class="tool-desc">Visual mapping of validator overlap by IP address. Current data may be limited, but historical records are available.</div>
+        <div class="tool-builder community">David Chen <span class="community-badge">community</span></div>
+      </a>
+      <a href="https://validator-transparency-dashboard.vercel.app/" target="_blank" rel="noopener" class="tool-card" data-cat="analytics" data-name="validator transparency dashboard metrics open solana">
         <div class="tool-head">
           <span class="tool-favicon-slot"></span>
           <div class="tool-name">Validator Transparency Dashboard</div>
@@ -327,180 +287,286 @@ body::before {
   </div>
 </section>
 
-<section class="category reveal reveal" data-cat="alerts">
+<section class="category reveal" data-cat="alerts">
   <div class="cat-header">
     <span class="cat-num">02</span>
     <span class="cat-title">Validator Alerts</span>
-    <span class="cat-count">1 tool</span>
+    <span class="cat-count">6 tools</span>
   </div>
   <div class="tools-grid">
-      <a href="https://rugalert.pumpkinspool.com/" target="_blank" rel="noopener" class="tool-card" data-cat="alerts" data-name="rugalert commission change rug alert delegator notification">
+      <a href="https://github.com/stakeconomy/solanamonitoring" target="_blank" rel="noopener" class="tool-card" data-cat="alerts" data-name="solanamonitoring stakeconomy telegraf bash script influxdb grafana monitor">
+        <div class="tool-head">
+          <span class="tool-favicon-slot"></span>
+          <div class="tool-name">SolanaMonitoring (Stakeconomy)</div>
+        </div>
+        <div class="tool-desc">Telegraf and bash script collecting server and validator metrics to InfluxDB. Includes Grafana dashboard and community-hosted version at metrics.stakeconomy.com.</div>
+        <div class="tool-builder community">Stakeconomy / Triton One Validator <span class="community-badge">community</span></div>
+      </a>
+      <a href="https://svt.one/dashboard" target="_blank" rel="noopener" class="tool-card" data-cat="alerts" data-name="svt solana validator toolkit dashboard stake metrics jpool">
+        <div class="tool-head">
+          <span class="tool-favicon-slot"></span>
+          <div class="tool-name">SVT</div>
+        </div>
+        <div class="tool-desc">Solana Validator Toolkit dashboard with validator metrics and stake data.</div>
+        <div class="tool-builder community">JPool <span class="community-badge">community</span></div>
+      </a>
+      <a href="https://gateomega.com/solcircl/" target="_blank" rel="noopener" class="tool-card" data-cat="alerts" data-name="solcircl gateomega validator alerts monitoring">
+        <div class="tool-head">
+          <span class="tool-favicon-slot"></span>
+          <div class="tool-name">SolCircl</div>
+        </div>
+        <div class="tool-desc">Mobile app for validators and delegators. Tracks validator status, performance vs cluster, stake investments, and Solana news.</div>
+        <div class="tool-builder community">GateOmega Validator <span class="community-badge">community</span></div>
+      </a>
+      <a href="https://choplet.dev/" target="_blank" rel="noopener" class="tool-card" data-cat="alerts" data-name="choplet validator applet monitoring uptime alerts blinklet solana actions">
+        <div class="tool-head">
+          <span class="tool-favicon-slot"></span>
+          <div class="tool-name">Choplet</div>
+        </div>
+        <div class="tool-desc">Validator monitoring with real-time metrics, uptime tracking and instant alerts. Includes Blinklet, a no-code platform for creating Solana Actions.</div>
+        <div class="tool-builder community">Choplet Studios <span class="community-badge">community</span></div>
+      </a>
+      <a href="https://slashr.dev/" target="_blank" rel="noopener" class="tool-card" data-cat="alerts" data-name="slashr live incident feed delinquency missed votes solana ethereum sui cosmos">
+        <div class="tool-head">
+          <span class="tool-favicon-slot"></span>
+          <div class="tool-name">Slashr</div>
+        </div>
+        <div class="tool-desc">Live validator incident feed: delinquency, missed votes. Covers Solana, Ethereum, Sui and Cosmos.</div>
+        <div class="tool-builder community">NullRabbitLabs <span class="community-badge">community</span></div>
+      </a>
+      <a href="https://rugalert.pumpkinspool.com/" target="_blank" rel="noopener" class="tool-card" data-cat="alerts" data-name="rugalert pumpkins pool validator commission change alerts mev">
         <div class="tool-head">
           <span class="tool-favicon-slot"></span>
           <div class="tool-name">RugAlert</div>
         </div>
-        <div class="tool-desc">Real-time alerts when a validator changes commission. Flags large jumps and full rugs (90%+) so delegators can react before losing rewards. Includes stake concentration map.</div>
-        <div class="tool-builder community">Pumpkin's Pool <span class="community-badge">community</span></div>
+        <div class="tool-desc">Real-time alerts for validator commission changes, MEV behavior changes, and other suspicious activity.</div>
+        <div class="tool-builder community">Pumpkin's Pool Validator <span class="community-badge">community</span></div>
       </a>
   </div>
 </section>
 
-<section class="category reveal reveal" data-cat="pools">
+<section class="category reveal" data-cat="network">
   <div class="cat-header">
     <span class="cat-num">03</span>
-    <span class="cat-title">Stake Pools & LSTs</span>
-    <span class="cat-count">6 tools</span>
+    <span class="cat-title">Network Analytics</span>
+    <span class="cat-count">3 tools</span>
   </div>
   <div class="tools-grid">
-      <a href="https://stakeview.app/stakes" target="_blank" rel="noopener" class="tool-card" data-cat="pools" data-name="stakeview stake accounts pool data inspect">
+      <a href="https://sonda.network/" target="_blank" rel="noopener" class="tool-card" data-cat="network" data-name="sonda decentralization infrastructure metrics network solya validator">
+        <div class="tool-head">
+          <span class="tool-favicon-slot"></span>
+          <div class="tool-name">SONDA</div>
+        </div>
+        <div class="tool-desc">Decentralization and infrastructure metrics. Lets validators assess how decentralized their setup is relative to the rest of the network.</div>
+        <div class="tool-builder community">Solya Validator <span class="community-badge">community</span></div>
+      </a>
+      <a href="https://parafi.tech/solana/network-stats" target="_blank" rel="noopener" class="tool-card" data-cat="network" data-name="parafi network stats solana validator dashboard">
+        <div class="tool-head">
+          <span class="tool-favicon-slot"></span>
+          <div class="tool-name">Parafi Network Stats</div>
+        </div>
+        <div class="tool-desc">Solana network statistics dashboard with validator and network-level data.</div>
+        <div class="tool-builder community">ParaFi Technologies Validator <span class="community-badge">community</span></div>
+      </a>
+      <a href="https://gdindex.app/validator" target="_blank" rel="noopener" class="tool-card" data-cat="network" data-name="gdindex validator decentralization asn city country ibrl locations definity">
+        <div class="tool-head">
+          <span class="tool-favicon-slot"></span>
+          <div class="tool-name">GDIndex</div>
+        </div>
+        <div class="tool-desc">Validator decentralization scoring with ASN, city and country concentration maps. Helps operators pick low-concentration hosting locations with strong IBRL.</div>
+        <div class="tool-builder community">Tielman | Definity stake pool <span class="community-badge">community</span></div>
+      </a>
+  </div>
+</section>
+
+<section class="category reveal" data-cat="pools">
+  <div class="cat-header">
+    <span class="cat-num">04</span>
+    <span class="cat-title">Stake Pools &amp; LSTs</span>
+    <span class="cat-count">7 tools</span>
+  </div>
+  <div class="tools-grid">
+      <a href="https://stakeview.app/stakes" target="_blank" rel="noopener" class="tool-card" data-cat="pools" data-name="stakeview stake pools dashboard shinobi systems">
         <div class="tool-head">
           <span class="tool-favicon-slot"></span>
           <div class="tool-name">Stakeview</div>
         </div>
-        <div class="tool-desc">Inspect individual stake accounts and stake pool data.</div>
-        <div class="tool-builder community">Stakeview <span class="community-badge">community</span></div>
+        <div class="tool-desc">Overview of all Solana stake pools with TVL, fees, and validator allocation.</div>
+        <div class="tool-builder community">Shinobi Systems Validator <span class="community-badge">community</span></div>
       </a>
-      <a href="https://www.cryptovik.info/solana-stakepools-dashboard/?tab=pools&epoch=latest&sort=category" target="_blank" rel="noopener" class="tool-card" data-cat="pools" data-name="cryptovik stake pools dashboard epochs validators">
-        <div class="tool-head">
-          <span class="tool-favicon-slot"></span>
-          <div class="tool-name">Cryptovik Stake Pools Dashboard</div>
-        </div>
-        <div class="tool-desc">Full dashboard of Solana stake pools, their dynamics over epochs, and the validators inside each pool.</div>
-        <div class="tool-builder community">CryptoVik Validator <span class="community-badge">community</span></div>
-      </a>
-      <a href="https://solanacompass.com/stake-pools" target="_blank" rel="noopener" class="tool-card" data-cat="pools" data-name="solana compass stake pools comparison analytics">
+      <a href="https://solanacompass.com/stake-pools" target="_blank" rel="noopener" class="tool-card" data-cat="pools" data-name="solana compass stake pools list comparison">
         <div class="tool-head">
           <span class="tool-favicon-slot"></span>
           <div class="tool-name">Solana Compass Stake Pools</div>
         </div>
-        <div class="tool-desc">Stake pool comparison and analytics.</div>
-        <div class="tool-builder">Solana Compass </div>
+        <div class="tool-desc">Listing of Solana stake pools with key metrics.</div>
+        <div class="tool-builder community">Solana Compass Validator <span class="community-badge">community</span></div>
       </a>
-      <a href="https://www.pinestake.com/en/pools" target="_blank" rel="noopener" class="tool-card" data-cat="pools" data-name="pinestake pools sandwich sfdp validators pool">
+      <a href="https://www.pinestake.com/en/pools" target="_blank" rel="noopener" class="tool-card" data-cat="pools" data-name="pinestake pools solana lst validator dashboard">
         <div class="tool-head">
           <span class="tool-favicon-slot"></span>
           <div class="tool-name">Pinestake Pools</div>
         </div>
-        <div class="tool-desc">Stake pool dashboard combining sandwich-behavior data with SFDP status and shows which validators each pool delegates to.</div>
-        <div class="tool-builder community">Pinestake Validator <span class="community-badge">community</span></div>
+        <div class="tool-desc">Stake pool dashboard tracking fees, TVL, and validator selection.</div>
+        <div class="tool-builder community">Pine Stake Validator <span class="community-badge">community</span></div>
       </a>
-      <a href="https://www.stakeinspector.com/" target="_blank" rel="noopener" class="tool-card" data-cat="pools" data-name="stake inspector accounts track behavior h2o">
+      <a href="https://www.cryptovik.info/solana-stakepools-dashboard/?tab=1" target="_blank" rel="noopener" class="tool-card" data-cat="pools" data-name="cryptovik stake pools dashboard solana monitoring">
+        <div class="tool-head">
+          <span class="tool-favicon-slot"></span>
+          <div class="tool-name">Cryptovik Stake Pools Dashboard</div>
+        </div>
+        <div class="tool-desc">Solana stake pools dashboard with multiple views and validator allocations.</div>
+        <div class="tool-builder community">CryptoVik Validator <span class="community-badge">community</span></div>
+      </a>
+      <a href="https://www.stakeinspector.com/" target="_blank" rel="noopener" class="tool-card" data-cat="pools" data-name="stake inspector h2o nodes solana lst pools validators">
         <div class="tool-head">
           <span class="tool-favicon-slot"></span>
           <div class="tool-name">Stake Inspector</div>
         </div>
-        <div class="tool-desc">Tool for inspecting individual stake accounts and tracking their behavior.</div>
+        <div class="tool-desc">Inspect stake pool composition and validator allocations across Solana LSTs.</div>
         <div class="tool-builder community">H2O Nodes Validator <span class="community-badge">community</span></div>
       </a>
-      <a href="https://www.pico-sol.com/en/lst/" target="_blank" rel="noopener" class="tool-card" data-cat="pools" data-name="picosol lst dashboard apy fees list jitoSOL bnsol">
+      <a href="https://www.pico-sol.com/en/lst/" target="_blank" rel="noopener" class="tool-card" data-cat="pools" data-name="picosol lst dashboard solana liquid staking tokens">
         <div class="tool-head">
           <span class="tool-favicon-slot"></span>
           <div class="tool-name">PicoSOL LST Dashboard</div>
         </div>
-        <div class="tool-desc">Comprehensive list of 100+ Solana LSTs with APY, total staked SOL, fees, pool type and quick links to trade.</div>
-        <div class="tool-builder community">Pico Validator <span class="community-badge">community</span></div>
+        <div class="tool-desc">LST dashboard with peg, supply, and validator allocations.</div>
+        <div class="tool-builder community">pico sol Validator <span class="community-badge">community</span></div>
+      </a>
+      <a href="https://github.com/DeepStakeSol/deepstake-widget" target="_blank" rel="noopener" class="tool-card" data-cat="pools" data-name="deepstake widget embeddable staking info validator website">
+        <div class="tool-head">
+          <span class="tool-favicon-slot"></span>
+          <div class="tool-name">DeepStake Widget</div>
+        </div>
+        <div class="tool-desc">Embeddable widget that lets validators show staking info on their own websites.</div>
+        <div class="tool-builder community">DeepStake Validator <span class="community-badge">community</span></div>
       </a>
   </div>
 </section>
 
-<section class="category reveal reveal" data-cat="calc">
+<section class="category reveal" data-cat="calc">
   <div class="cat-header">
-    <span class="cat-num">04</span>
-    <span class="cat-title">Profit Calculators</span>
+    <span class="cat-num">05</span>
+    <span class="cat-title">Validator Calculators</span>
     <span class="cat-count">7 tools</span>
   </div>
   <div class="tools-grid">
-      <a href="https://cogentcrypto.io/ValidatorProfitCalculator" target="_blank" rel="noopener" class="tool-card" data-cat="calc" data-name="cogent profit calculator validator income commission mev server cost sol usd">
+      <a href="https://cogentcrypto.io/ValidatorProfitCalculator" target="_blank" rel="noopener" class="tool-card" data-cat="calc" data-name="cogent validator profit calculator solana sol strategies">
         <div class="tool-head">
           <span class="tool-favicon-slot"></span>
           <div class="tool-name">Cogent Validator Profit Calculator</div>
         </div>
-        <div class="tool-desc">Input stake, commission, MEV commission and server cost, get yearly/monthly/daily/per-epoch numbers in SOL or USD.</div>
-        <div class="tool-builder">Cogent Crypto </div>
+        <div class="tool-desc">Profit calculator covering hardware, commission, and stake assumptions.</div>
+        <div class="tool-builder community">Cogent by SOL Strategies Validator <span class="community-badge">community</span></div>
       </a>
-      <a href="https://solcalc.vercel.app/" target="_blank" rel="noopener" class="tool-card" data-cat="calc" data-name="solcalc calculator staking simple">
+      <a href="https://solcalc.vercel.app/" target="_blank" rel="noopener" class="tool-card" data-cat="calc" data-name="pigs calculator solcalc validator profit pigs in blankets">
         <div class="tool-head">
           <span class="tool-favicon-slot"></span>
-          <div class="tool-name">SolCalc</div>
+          <div class="tool-name">Pigs Calculator</div>
         </div>
-        <div class="tool-desc">Simple Solana validator and staking calculator.</div>
-        <div class="tool-builder community">SolCalc <span class="community-badge">community</span></div>
+        <div class="tool-desc">Validator profit calculator with stake, MEV, and commission inputs.</div>
+        <div class="tool-builder community">Pigs in Blankets Validator <span class="community-badge">community</span></div>
       </a>
-      <a href="https://www.pinestake.com/en/profit-calculator" target="_blank" rel="noopener" class="tool-card" data-cat="calc" data-name="pinestake profit calculator estimator validator">
+      <a href="https://www.pinestake.com/en/profit-calculator" target="_blank" rel="noopener" class="tool-card" data-cat="calc" data-name="pinestake profit calculator validator solana">
         <div class="tool-head">
           <span class="tool-favicon-slot"></span>
           <div class="tool-name">Pinestake Profit Calculator</div>
         </div>
-        <div class="tool-desc">Validator profit estimator from Pinestake.</div>
-        <div class="tool-builder community">Pinestake <span class="community-badge">community</span></div>
+        <div class="tool-desc">Validator profitability calculator with rich parameters and presets.</div>
+        <div class="tool-builder community">Pine Stake Validator <span class="community-badge">community</span></div>
       </a>
-      <a href="https://validator-profit-estimator.trillium.so/" target="_blank" rel="noopener" class="tool-card" data-cat="calc" data-name="trillium profit estimator validator calculator">
+      <a href="https://validator-profit-estimator.trillium.so/" target="_blank" rel="noopener" class="tool-card" data-cat="calc" data-name="trillium profit estimator validator earnings calculator">
         <div class="tool-head">
           <span class="tool-favicon-slot"></span>
           <div class="tool-name">Trillium Profit Estimator</div>
         </div>
-        <div class="tool-desc">Validator profit estimator built on Trillium data.</div>
-        <div class="tool-builder community">Trillium <span class="community-badge">community</span></div>
+        <div class="tool-desc">Estimate validator earnings using live network data from Trillium.</div>
+        <div class="tool-builder community">Trillium Validator <span class="community-badge">community</span></div>
       </a>
       <a href="https://doublezero.xyz/dzdp/calculator" target="_blank" rel="noopener" class="tool-card" data-cat="calc" data-name="doublezero dzdp calculator delegation program">
         <div class="tool-head">
           <span class="tool-favicon-slot"></span>
           <div class="tool-name">DoubleZero DZDP Calculator</div>
         </div>
-        <div class="tool-desc">Calculator for the DoubleZero Delegation Program.</div>
+        <div class="tool-desc">Calculator for the DoubleZero Delegation Program rewards and parameters.</div>
         <div class="tool-builder">DoubleZero </div>
       </a>
-      <a href="https://dashboards.validblocks.com/svpcalc" target="_blank" rel="noopener" class="tool-card" data-cat="calc" data-name="validblocks svp calculator profitability solana">
+      <a href="https://dashboards.validblocks.com/svpcalc" target="_blank" rel="noopener" class="tool-card" data-cat="calc" data-name="validblocks svp calculator profit validator">
         <div class="tool-head">
           <span class="tool-favicon-slot"></span>
           <div class="tool-name">ValidBlocks SVP Calculator</div>
         </div>
-        <div class="tool-desc">Solana Validator Profitability calculator.</div>
-        <div class="tool-builder community">ValidBlocks <span class="community-badge">community</span></div>
+        <div class="tool-desc">Validator profitability calculator paired with the ValidBlocks SVP dashboard.</div>
+        <div class="tool-builder community">Valid Blocks Validator <span class="community-badge">community</span></div>
       </a>
-      <a href="https://app.jpool.one/validator-profit-calculator" target="_blank" rel="noopener" class="tool-card" data-cat="calc" data-name="jpool validator profit calculator">
+      <a href="https://app.jpool.one/validator-profit-calculator" target="_blank" rel="noopener" class="tool-card" data-cat="calc" data-name="jpool validator profit calculator solana">
         <div class="tool-head">
           <span class="tool-favicon-slot"></span>
           <div class="tool-name">JPool Validator Profit Calculator</div>
         </div>
-        <div class="tool-desc">Validator profit calculator from JPool.</div>
-        <div class="tool-builder">JPool </div>
+        <div class="tool-desc">Validator profit calculator from JPool with stake, commission, and MEV inputs.</div>
+        <div class="tool-builder community">JPool <span class="community-badge">community</span></div>
       </a>
   </div>
 </section>
 
-<section class="category reveal reveal" data-cat="delegation">
+<section class="category reveal" data-cat="delegation">
   <div class="cat-header">
-    <span class="cat-num">05</span>
+    <span class="cat-num">06</span>
     <span class="cat-title">Pool Delegation Programs</span>
-    <span class="cat-count">5 tools</span>
+    <span class="cat-count">9 tools</span>
   </div>
   <div class="tools-grid">
-      <a href="https://stake.solblaze.org/verified/" target="_blank" rel="noopener" class="tool-card" data-cat="delegation" data-name="solblaze verified whitelist delegation staking">
+      <a href="https://stake.solblaze.org/verified/" target="_blank" rel="noopener" class="tool-card" data-cat="delegation" data-name="solblaze verified validators stake pool program">
         <div class="tool-head">
           <span class="tool-favicon-slot"></span>
           <div class="tool-name">SolBlaze Verified</div>
         </div>
-        <div class="tool-desc">Validators verified by SolBlaze for delegation.</div>
-        <div class="tool-builder">SolBlaze </div>
+        <div class="tool-desc">SolBlaze verified validators program: criteria, validator list, and delegation rules.</div>
+        <div class="tool-builder community">SolBlaze Validator <span class="community-badge">community</span></div>
       </a>
-      <a href="https://www.jagpool.xyz/pool" target="_blank" rel="noopener" class="tool-card" data-cat="delegation" data-name="jagpool community delegation program validator list">
+      <a href="https://www.jagpool.xyz/pool" target="_blank" rel="noopener" class="tool-card" data-cat="delegation" data-name="jagpool jaguar validator program stake pool">
         <div class="tool-head">
           <span class="tool-favicon-slot"></span>
           <div class="tool-name">JagPool</div>
         </div>
-        <div class="tool-desc">JagPool validator list and delegation program.</div>
-        <div class="tool-builder community">JagPool <span class="community-badge">community</span></div>
+        <div class="tool-desc">JagPool stake delegation program with validator selection criteria.</div>
+        <div class="tool-builder community">Jaguar Validator <span class="community-badge">community</span></div>
       </a>
-      <a href="https://app.jpool.one/community-good" target="_blank" rel="noopener" class="tool-card" data-cat="delegation" data-name="jpool community good priority delegation program">
+      <a href="https://app.jpool.one/validators" target="_blank" rel="noopener" class="tool-card" data-cat="delegation" data-name="jpool validators dashboard stake pool delegation">
+        <div class="tool-head">
+          <span class="tool-favicon-slot"></span>
+          <div class="tool-name">JPool Validators Dashboard</div>
+        </div>
+        <div class="tool-desc">JPool validators dashboard with selection criteria and stake allocations.</div>
+        <div class="tool-builder community">JPool <span class="community-badge">community</span></div>
+      </a>
+      <a href="https://app.jpool.one/community-good" target="_blank" rel="noopener" class="tool-card" data-cat="delegation" data-name="jpool community good fund stake program">
         <div class="tool-head">
           <span class="tool-favicon-slot"></span>
           <div class="tool-name">JPool Community Good</div>
         </div>
-        <div class="tool-desc">JPool's Community Good priority delegation program for community validators.</div>
-        <div class="tool-builder">JPool </div>
+        <div class="tool-desc">JPool's Community Good fund for supporting public-goods validators.</div>
+        <div class="tool-builder community">JPool <span class="community-badge">community</span></div>
       </a>
-      <a href="https://select.marinade.finance/" target="_blank" rel="noopener" class="tool-card" data-cat="delegation" data-name="marinade select curated validator selection program">
+      <a href="https://xshin.fi/#Validators" target="_blank" rel="noopener" class="tool-card" data-cat="delegation" data-name="shinobi performance pool validators xshin program">
+        <div class="tool-head">
+          <span class="tool-favicon-slot"></span>
+          <div class="tool-name">Shinobi Performance Pool</div>
+        </div>
+        <div class="tool-desc">Shinobi Systems performance-based stake pool with validator selection criteria.</div>
+        <div class="tool-builder community">Shinobi Systems Validator <span class="community-badge">community</span></div>
+      </a>
+      <a href="https://thevault.finance/validators" target="_blank" rel="noopener" class="tool-card" data-cat="delegation" data-name="the vault validators dashboard stake pool delegation">
+        <div class="tool-head">
+          <span class="tool-favicon-slot"></span>
+          <div class="tool-name">The Vault Validators Dashboard</div>
+        </div>
+        <div class="tool-desc">Dashboard of validators eligible for The Vault pool and their stake allocations.</div>
+        <div class="tool-builder community">The Vault Pool <span class="community-badge">community</span></div>
+      </a>
+      <a href="https://select.marinade.finance/" target="_blank" rel="noopener" class="tool-card" data-cat="delegation" data-name="marinade select validator program curated">
         <div class="tool-head">
           <span class="tool-favicon-slot"></span>
           <div class="tool-name">Marinade Select</div>
@@ -508,7 +574,15 @@ body::before {
         <div class="tool-desc">Marinade's curated validator selection program. Note: currently very restrictive on new validators.</div>
         <div class="tool-builder">Marinade Finance </div>
       </a>
-      <a href="https://stake.edgevana.com/validators" target="_blank" rel="noopener" class="tool-card" data-cat="delegation" data-name="edgevana validators top 50 ranked delegation">
+      <a href="https://app.marinade.finance/network/validators/" target="_blank" rel="noopener" class="tool-card" data-cat="delegation" data-name="marinade validators official list finance network">
+        <div class="tool-head">
+          <span class="tool-favicon-slot"></span>
+          <div class="tool-name">Marinade Validators</div>
+        </div>
+        <div class="tool-desc">Marinade dashboard tracking validators across the network and their Marinade stake.</div>
+        <div class="tool-builder">Marinade Finance </div>
+      </a>
+      <a href="https://stake.edgevana.com/validators" target="_blank" rel="noopener" class="tool-card" data-cat="delegation" data-name="edgevana validators delegation program ranking">
         <div class="tool-head">
           <span class="tool-favicon-slot"></span>
           <div class="tool-name">Edgevana Validators</div>
@@ -519,11 +593,11 @@ body::before {
   </div>
 </section>
 
-<section class="category reveal reveal" data-cat="operator">
+<section class="category reveal" data-cat="operator">
   <div class="cat-header">
-    <span class="cat-num">06</span>
+    <span class="cat-num">07</span>
     <span class="cat-title">Node Operator Tools</span>
-    <span class="cat-count">4 tools</span>
+    <span class="cat-count">7 tools</span>
   </div>
   <div class="tools-grid">
       <a href="https://gist.github.com/STEVLTH/7f5304452115660f3ec85e729bb4a29e" target="_blank" rel="noopener" class="tool-card" data-cat="operator" data-name="failover script simple gist validator stevlth">
@@ -531,41 +605,65 @@ body::before {
           <span class="tool-favicon-slot"></span>
           <div class="tool-name">Simple Failover Gist</div>
         </div>
-        <div class="tool-desc">Minimal failover script for Solana validators. Small and easy to read.</div>
+        <div class="tool-desc">Minimal failover script for Solana validators. Small, easy to read, and a good starting point for understanding the basics.</div>
         <div class="tool-builder community">STEVLTH Validator <span class="community-badge">community</span></div>
       </a>
-      <a href="https://github.com/schmiatz/solana-validator-automatic-failover" target="_blank" rel="noopener" class="tool-card" data-cat="operator" data-name="schmiatz automatic failover validator solana feature rich">
+      <a href="https://github.com/schmiatz/solana-validator-automatic-failover" target="_blank" rel="noopener" class="tool-card" data-cat="operator" data-name="schmiatz automatic failover validator feature rich">
         <div class="tool-head">
           <span class="tool-favicon-slot"></span>
           <div class="tool-name">Schmiatz Automatic Failover</div>
         </div>
-        <div class="tool-desc">More feature-rich automatic failover tool for Solana validators.</div>
+        <div class="tool-desc">Full-featured automatic failover tool for Solana validators. Handles edge cases and supports more configurations than a basic script.</div>
         <div class="tool-builder community">schmiatz <span class="community-badge">community</span></div>
       </a>
-      <a href="https://github.com/StakeNode777/solana-node-manager" target="_blank" rel="noopener" class="tool-card" data-cat="operator" data-name="solana node manager cli command line stakenode777">
+      <a href="https://github.com/StakeNode777/solana-node-manager" target="_blank" rel="noopener" class="tool-card" data-cat="operator" data-name="solana node manager command line cli stakenode777">
         <div class="tool-head">
           <span class="tool-favicon-slot"></span>
           <div class="tool-name">Solana Node Manager</div>
         </div>
-        <div class="tool-desc">Command-line node management tool for Solana validators.</div>
-        <div class="tool-builder community">StakeNode777 <span class="community-badge">community</span></div>
+        <div class="tool-desc">Command-line node management tool for Solana validators. Handles startup, shutdown, key swaps and routine operational tasks.</div>
+        <div class="tool-builder community">StakeNode777 Validator <span class="community-badge">community</span></div>
       </a>
-      <a href="https://github.com/StakeNode777/web-solana-node-manager" target="_blank" rel="noopener" class="tool-card" data-cat="operator" data-name="web solana node manager web interface stakenode777">
+      <a href="https://github.com/StakeNode777/web-solana-node-manager" target="_blank" rel="noopener" class="tool-card" data-cat="operator" data-name="web solana node manager interface stakenode777">
         <div class="tool-head">
           <span class="tool-favicon-slot"></span>
           <div class="tool-name">Web Solana Node Manager</div>
         </div>
-        <div class="tool-desc">Web interface for solana-node-manager.</div>
-        <div class="tool-builder community">StakeNode777 <span class="community-badge">community</span></div>
+        <div class="tool-desc">Web-based interface for solana-node-manager. Manage your validator from a browser instead of the command line.</div>
+        <div class="tool-builder community">StakeNode777 Validator <span class="community-badge">community</span></div>
+      </a>
+      <a href="https://github.com/Lvk2015/firedancer-health-exporter" target="_blank" rel="noopener" class="tool-card" data-cat="operator" data-name="firedancer health exporter prometheus frankendancer journalctl logs rpc">
+        <div class="tool-head">
+          <span class="tool-favicon-slot"></span>
+          <div class="tool-name">Firedancer Health Exporter</div>
+        </div>
+        <div class="tool-desc">Prometheus exporter for Firedancer and Frankendancer. Reads journalctl logs and exposes log-based errors plus optional RPC metrics.</div>
+        <div class="tool-builder community">Alex <span class="community-badge">community</span></div>
+      </a>
+      <a href="https://github.com/hawkins65/bam-leader-activity" target="_blank" rel="noopener" class="tool-card" data-cat="operator" data-name="bam leader activity scripts jito block engine validator health logs">
+        <div class="tool-head">
+          <span class="tool-favicon-slot"></span>
+          <div class="tool-name">BAM Leader Activity</div>
+        </div>
+        <div class="tool-desc">Scripts to check if a validator is active and healthy on Jito Block Engine and BAM. Greps logs for status messages.</div>
+        <div class="tool-builder community">John hawkins65 <span class="community-badge">community</span></div>
+      </a>
+      <a href="https://github.com/diman-io/solana-metrics-duplicator" target="_blank" rel="noopener" class="tool-card" data-cat="operator" data-name="solana metrics duplicator influxdb local foundation diman">
+        <div class="tool-head">
+          <span class="tool-favicon-slot"></span>
+          <div class="tool-name">Solana Metrics Duplicator</div>
+        </div>
+        <div class="tool-desc">Duplicates validator metrics to multiple InfluxDB destinations. Useful for keeping local monitoring while still sending data to Solana Foundation.</div>
+        <div class="tool-builder community">diman Validator <span class="community-badge">community</span></div>
       </a>
   </div>
 </section>
 
-<section class="category reveal reveal" data-cat="alpenglow">
+<section class="category reveal" data-cat="alpenglow">
   <div class="cat-header">
-    <span class="cat-num">07</span>
+    <span class="cat-num">08</span>
     <span class="cat-title">Alpenglow</span>
-    <span class="cat-count">3 tools</span>
+    <span class="cat-count">4 tools</span>
   </div>
   <div class="tools-grid">
       <a href="https://ag.validblocks.com/" target="_blank" rel="noopener" class="tool-card" data-cat="alpenglow" data-name="alpenglow validblocks explorer block community cluster 2026">
@@ -574,7 +672,7 @@ body::before {
           <div class="tool-name">Alpenglow ValidBlocks Explorer</div>
         </div>
         <div class="tool-desc">Block explorer for the Alpenglow Community Cluster, launched May 2026.</div>
-        <div class="tool-builder community">ValidBlocks <span class="community-badge">community</span></div>
+        <div class="tool-builder community">Valid Blocks Validator <span class="community-badge">community</span></div>
       </a>
       <a href="https://ag-community-status.stakingfacilities.com/" target="_blank" rel="noopener" class="tool-card" data-cat="alpenglow" data-name="alpenglow community status operational dashboard staking facilities">
         <div class="tool-head">
@@ -582,7 +680,7 @@ body::before {
           <div class="tool-name">Alpenglow Community Status</div>
         </div>
         <div class="tool-desc">Operational status dashboard for the Alpenglow Community Cluster.</div>
-        <div class="tool-builder community">Staking Facilities <span class="community-badge">community</span></div>
+        <div class="tool-builder community">Staking Facilities Validator <span class="community-badge">community</span></div>
       </a>
       <a href="https://alpenglow.trillium.so/" target="_blank" rel="noopener" class="tool-card" data-cat="alpenglow" data-name="alpenglow trillium dashboard analytics community cluster metrics">
         <div class="tool-head">
@@ -590,19 +688,67 @@ body::before {
           <div class="tool-name">Alpenglow Trillium Dashboard</div>
         </div>
         <div class="tool-desc">Trillium dashboard for the Alpenglow Community Cluster. Validator analytics, metrics, and performance tracking.</div>
-        <div class="tool-builder community">Trillium <span class="community-badge">community</span></div>
+        <div class="tool-builder community">Trillium Validator <span class="community-badge">community</span></div>
+      </a>
+      <a href="https://alp.vybenetwork.com/" target="_blank" rel="noopener" class="tool-card" data-cat="alpenglow" data-name="alpenglow vybe network dashboard faucet metrics cluster">
+        <div class="tool-head">
+          <span class="tool-favicon-slot"></span>
+          <div class="tool-name">AlpenGlow Vybe Dashboard</div>
+        </div>
+        <div class="tool-desc">Comprehensive Alpenglow Cluster dashboard with extended metrics and a working faucet.</div>
+        <div class="tool-builder community">Vybe Validator <span class="community-badge">community</span></div>
       </a>
   </div>
 </section>
 
-<section class="category reveal reveal" data-cat="special">
+<section class="category reveal" data-cat="heavyweights">
   <div class="cat-header">
-    <span class="cat-num">08</span>
-    <span class="cat-title">Special Tracks</span>
-    <span class="cat-count">4 tools</span>
+    <span class="cat-num">09</span>
+    <span class="cat-title">The Heavyweights</span>
+    <span class="cat-count">7 tools</span>
   </div>
   <div class="tools-grid">
-      <a href="https://bam.dev/explorer/" target="_blank" rel="noopener" class="tool-card" data-cat="special" data-name="bam explorer jito network validator connections node status stake">
+      <a href="https://stakewiz.com/" target="_blank" rel="noopener" class="tool-card" data-cat="heavyweights" data-name="stakewiz validator dashboard reference solana laine sol strategies">
+        <div class="tool-head">
+          <span class="tool-favicon-slot"></span>
+          <div class="tool-name">Stakewiz</div>
+        </div>
+        <div class="tool-desc">Reference validator dashboard with comprehensive metrics, used widely across the Solana ecosystem.</div>
+        <div class="tool-builder community">Laine by SOL Strategies Validator <span class="community-badge">community</span></div>
+      </a>
+      <a href="https://www.validators.app/" target="_blank" rel="noopener" class="tool-card" data-cat="heavyweights" data-name="validators app reference dashboard solana block logic triton">
+        <div class="tool-head">
+          <span class="tool-favicon-slot"></span>
+          <div class="tool-name">Validators.app</div>
+        </div>
+        <div class="tool-desc">Long-standing reference validator dashboard with deep historical data.</div>
+        <div class="tool-builder community">Block Logic / Triton Validator <span class="community-badge">community</span></div>
+      </a>
+      <a href="https://solanacompass.com/" target="_blank" rel="noopener" class="tool-card" data-cat="heavyweights" data-name="solana compass validator directory reference">
+        <div class="tool-head">
+          <span class="tool-favicon-slot"></span>
+          <div class="tool-name">Solana Compass</div>
+        </div>
+        <div class="tool-desc">Validator directory and educational hub. Often the first stop for new delegators.</div>
+        <div class="tool-builder community">Solana Compass Validator <span class="community-badge">community</span></div>
+      </a>
+      <a href="https://ibrl.wtf/" target="_blank" rel="noopener" class="tool-card" data-cat="heavyweights" data-name="ibrl analytics jito block building behavior slot timing vote packing score">
+        <div class="tool-head">
+          <span class="tool-favicon-slot"></span>
+          <div class="tool-name">IBRL Analytics</div>
+        </div>
+        <div class="tool-desc">Analyzes block-building behavior using slot-level data. Produces an IBRL score plus separate scores for slot timing, vote packing and non-vote packing.</div>
+        <div class="tool-builder">Jito Labs </div>
+      </a>
+      <a href="https://explorer.jito.wtf/" target="_blank" rel="noopener" class="tool-card" data-cat="heavyweights" data-name="jito explorer bundles tips mev flows">
+        <div class="tool-head">
+          <span class="tool-favicon-slot"></span>
+          <div class="tool-name">Jito Explorer</div>
+        </div>
+        <div class="tool-desc">Block explorer focused on Jito-related activity: bundles, tips, MEV flows.</div>
+        <div class="tool-builder">Jito Labs </div>
+      </a>
+      <a href="https://bam.dev/explorer/" target="_blank" rel="noopener" class="tool-card" data-cat="heavyweights" data-name="bam explorer jito network validator connections node status stake">
         <div class="tool-head">
           <span class="tool-favicon-slot"></span>
           <div class="tool-name">BAM Explorer</div>
@@ -610,15 +756,7 @@ body::before {
         <div class="tool-desc">Real-time monitoring of the BAM network: validator connections, node status, stake distribution.</div>
         <div class="tool-builder">Jito Labs </div>
       </a>
-      <a href="https://climate.solana.com/" target="_blank" rel="noopener" class="tool-card" data-cat="special" data-name="solana climate dashboard energy carbon footprint environment">
-        <div class="tool-head">
-          <span class="tool-favicon-slot"></span>
-          <div class="tool-name">Solana Climate Dashboard</div>
-        </div>
-        <div class="tool-desc">Environmental metrics: energy use, carbon footprint of the validator set.</div>
-        <div class="tool-builder">Solana Foundation </div>
-      </a>
-      <a href="https://www.jito.network/stakenet/steward/#validator-list" target="_blank" rel="noopener" class="tool-card" data-cat="special" data-name="jito stakenet steward validators eligible algorithmic delegation">
+      <a href="https://www.jito.network/stakenet/steward/#validator-list" target="_blank" rel="noopener" class="tool-card" data-cat="heavyweights" data-name="jito stakenet steward validators eligible algorithmic delegation">
         <div class="tool-head">
           <span class="tool-favicon-slot"></span>
           <div class="tool-name">Jito StakeNet Steward</div>
@@ -626,97 +764,105 @@ body::before {
         <div class="tool-desc">Official list of validators eligible for Jito StakeNet algorithmic delegation.</div>
         <div class="tool-builder">Jito Labs </div>
       </a>
-      <a href="https://app.marinade.finance/network/validators/" target="_blank" rel="noopener" class="tool-card" data-cat="special" data-name="marinade validators official list finance network">
-        <div class="tool-head">
-          <span class="tool-favicon-slot"></span>
-          <div class="tool-name">Marinade Validators</div>
-        </div>
-        <div class="tool-desc">Official validator list from Marinade Finance.</div>
-        <div class="tool-builder">Marinade Finance </div>
-      </a>
   </div>
 </section>
 
-<section class="category reveal reveal" data-cat="established">
-  <div class="cat-header">
-    <span class="cat-num">09</span>
-    <span class="cat-title">Big & Established</span>
-    <span class="cat-count">4 tools</span>
-  </div>
-  <div class="tools-grid">
-      <a href="https://stakewiz.com/" target="_blank" rel="noopener" class="tool-card" data-cat="established" data-name="stakewiz validator ranking score stake jito mev commission history">
-        <div class="tool-head">
-          <span class="tool-favicon-slot"></span>
-          <div class="tool-name">Stakewiz</div>
-        </div>
-        <div class="tool-desc">Validator ranking with score, stake weight, Jito and MEV commission breakdown, and historical performance tracking. Very widely used.</div>
-        <div class="tool-builder">Stakewiz team </div>
-      </a>
-      <a href="https://www.validators.app/" target="_blank" rel="noopener" class="tool-card" data-cat="established" data-name="validators app explorer score stake doublezero pool tracking">
-        <div class="tool-head">
-          <span class="tool-favicon-slot"></span>
-          <div class="tool-name">Validators.app</div>
-        </div>
-        <div class="tool-desc">Validator explorer with score, stake, Jito and DoubleZero integration, stake explorer and stake pool tracking.</div>
-        <div class="tool-builder">Validators.app team </div>
-      </a>
-      <a href="https://solanacompass.com/" target="_blank" rel="noopener" class="tool-card" data-cat="established" data-name="solana compass apy stake analytics delegator entry">
-        <div class="tool-head">
-          <span class="tool-favicon-slot"></span>
-          <div class="tool-name">Solana Compass</div>
-        </div>
-        <div class="tool-desc">Validators ranked by APY and stake, with broader network analytics. Popular delegator entry point.</div>
-        <div class="tool-builder">Solana Compass </div>
-      </a>
-      <a href="https://topvalidators.app/" target="_blank" rel="noopener" class="tool-card" data-cat="established" data-name="topvalidators leaderboard apy ranking metrics">
-        <div class="tool-head">
-          <span class="tool-favicon-slot"></span>
-          <div class="tool-name">TopValidators</div>
-        </div>
-        <div class="tool-desc">Validator leaderboard ranked by APY and other metrics.</div>
-        <div class="tool-builder community">TopValidators <span class="community-badge">community</span></div>
-      </a>
-  </div>
-</section>
-
-<section class="category reveal reveal" data-cat="learning">
+<section class="category reveal" data-cat="foundation">
   <div class="cat-header">
     <span class="cat-num">10</span>
-    <span class="cat-title">Learning & Resources</span>
-    <span class="cat-count">4 tools</span>
+    <span class="cat-title">Solana Foundation</span>
+    <span class="cat-count">5 tools</span>
   </div>
   <div class="tools-grid">
-      <a href="https://learn.blueshift.gg/en" target="_blank" rel="noopener" class="tool-card" data-cat="learning" data-name="blueshift learning platform solana development courses">
+      <a href="https://climate.solana.com/" target="_blank" rel="noopener" class="tool-card" data-cat="foundation" data-name="solana climate dashboard energy carbon footprint environment">
         <div class="tool-head">
           <span class="tool-favicon-slot"></span>
-          <div class="tool-name">Blueshift</div>
+          <div class="tool-name">Solana Climate Dashboard</div>
         </div>
-        <div class="tool-desc">Learning platform for Solana development.</div>
-        <div class="tool-builder">Blueshift </div>
+        <div class="tool-desc">Environmental metrics: energy use and carbon footprint of the validator set.</div>
+        <div class="tool-builder">Solana Foundation </div>
       </a>
-      <a href="https://github.com/helius-labs/solana-awesome" target="_blank" rel="noopener" class="tool-card" data-cat="learning" data-name="helius awesome list solana resources libraries projects developers">
+      <a href="https://solana.com/community" target="_blank" rel="noopener" class="tool-card" data-cat="foundation" data-name="solana community hub events programs grants regional">
         <div class="tool-head">
           <span class="tool-favicon-slot"></span>
-          <div class="tool-name">Helius Solana Awesome</div>
+          <div class="tool-name">Solana Community</div>
         </div>
-        <div class="tool-desc">Awesome-list of Solana resources covering tools, libraries, projects. More developer-focused.</div>
-        <div class="tool-builder">Helius Labs </div>
+        <div class="tool-desc">Hub for the Solana community: programs, grants, regional initiatives and ways to get involved.</div>
+        <div class="tool-builder">Solana Foundation </div>
       </a>
-      <a href="https://ackee.xyz/solana/book/latest/" target="_blank" rel="noopener" class="tool-card" data-cat="learning" data-name="ackee solana book development audited documentation">
+      <a href="https://solana.com/events" target="_blank" rel="noopener" class="tool-card" data-cat="foundation" data-name="solana events calendar hackathons conferences meetups community">
         <div class="tool-head">
           <span class="tool-favicon-slot"></span>
-          <div class="tool-name">Ackee Solana Book</div>
+          <div class="tool-name">Solana &amp; Community events</div>
         </div>
-        <div class="tool-desc">Long-form book on Solana development, maintained by Ackee.</div>
-        <div class="tool-builder">Ackee </div>
+        <div class="tool-desc">Calendar of Solana ecosystem events: hackathons, conferences, and community meetups.</div>
+        <div class="tool-builder">Solana Foundation </div>
       </a>
-      <a href="https://www.solanaconstitution.com/" target="_blank" rel="noopener" class="tool-card" data-cat="learning" data-name="solana constitution community governance network initiative">
+      <a href="https://solana.org/delegation-program" target="_blank" rel="noopener" class="tool-card" data-cat="foundation" data-name="solana foundation delegation program developers contributors network validators">
+        <div class="tool-head">
+          <span class="tool-favicon-slot"></span>
+          <div class="tool-name">Solana Foundation Delegation Program</div>
+        </div>
+        <div class="tool-desc">Foundation-run program helping active developers and contributors in the Solana ecosystem become network validators.</div>
+        <div class="tool-builder">Solana Foundation </div>
+      </a>
+      <a href="https://www.solanaconstitution.com/" target="_blank" rel="noopener" class="tool-card" data-cat="foundation" data-name="solana constitution governance principles community draft initiative">
         <div class="tool-head">
           <span class="tool-favicon-slot"></span>
           <div class="tool-name">Solana Constitution</div>
         </div>
-        <div class="tool-desc">Community initiative to draft a constitution for the Solana network.</div>
-        <div class="tool-builder community">community <span class="community-badge">community</span></div>
+        <div class="tool-desc">Community-driven initiative establishing foundational governance principles for the Solana ecosystem, led by industry leaders and shaped by community voices.</div>
+        <div class="tool-builder community">the community <span class="community-badge">community</span></div>
+      </a>
+  </div>
+</section>
+
+<section class="category reveal" data-cat="learning">
+  <div class="cat-header">
+    <span class="cat-num">11</span>
+    <span class="cat-title">Learning &amp; Resources</span>
+    <span class="cat-count">5 tools</span>
+  </div>
+  <div class="tools-grid">
+      <a href="https://learn.blueshift.gg/en" target="_blank" rel="noopener" class="tool-card" data-cat="learning" data-name="blueshift learn solana courses tutorials">
+        <div class="tool-head">
+          <span class="tool-favicon-slot"></span>
+          <div class="tool-name">Blueshift</div>
+        </div>
+        <div class="tool-desc">Learning platform with structured Solana courses and tutorials.</div>
+        <div class="tool-builder community">blueshift Validator <span class="community-badge">community</span></div>
+      </a>
+      <a href="https://github.com/helius-labs/solana-awesome" target="_blank" rel="noopener" class="tool-card" data-cat="learning" data-name="helius labs solana awesome curated list github resources">
+        <div class="tool-head">
+          <span class="tool-favicon-slot"></span>
+          <div class="tool-name">Helius Solana Awesome</div>
+        </div>
+        <div class="tool-desc">Curated awesome-list of Solana resources, libraries, and projects.</div>
+        <div class="tool-builder community">Helius Labs <span class="community-badge">community</span></div>
+      </a>
+      <a href="https://ackee.xyz/solana/book/latest/" target="_blank" rel="noopener" class="tool-card" data-cat="learning" data-name="ackee solana book security audit guide">
+        <div class="tool-head">
+          <span class="tool-favicon-slot"></span>
+          <div class="tool-name">Ackee Solana Book</div>
+        </div>
+        <div class="tool-desc">In-depth Solana book covering security, audits, and program development.</div>
+        <div class="tool-builder community">Ackee Blockchain Security <span class="community-badge">community</span></div>
+      </a>
+      <a href="https://docs.anza.xyz/operations" target="_blank" rel="noopener" class="tool-card" data-cat="learning" data-name="anza validator docs operations agave running node">
+        <div class="tool-head">
+          <span class="tool-favicon-slot"></span>
+          <div class="tool-name">Anza Validator Docs</div>
+        </div>
+        <div class="tool-desc">Official validator operations documentation maintained by Anza.</div>
+        <div class="tool-builder">Anza </div>
+      </a>
+      <a href="https://solana.com/docs" target="_blank" rel="noopener" class="tool-card" data-cat="learning" data-name="solana documentation official protocol developer reference">
+        <div class="tool-head">
+          <span class="tool-favicon-slot"></span>
+          <div class="tool-name">Solana Documentation</div>
+        </div>
+        <div class="tool-desc">Official Solana protocol documentation.</div>
+        <div class="tool-builder">Solana Foundation </div>
       </a>
   </div>
 </section>
