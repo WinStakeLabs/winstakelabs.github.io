@@ -136,7 +136,7 @@ body::before {
     <button class="filter-btn" data-cat="foundation">Foundation</button>
     <button class="filter-btn" data-cat="learning">Learning</button>
   </div>
-  <span class="visible-count" id="visibleCount">107 tools</span>
+  <span class="visible-count" id="visibleCount">109 tools</span>
 </div>
 
 <div class="empty" id="emptyState"><p>// No tools match your search.</p></div>
@@ -145,7 +145,7 @@ body::before {
   <div class="cat-header">
     <span class="cat-num">01</span>
     <span class="cat-title">Validator Analytics</span>
-    <span class="cat-count">22 tools</span>
+    <span class="cat-count">21 tools</span>
   </div>
   <div class="tools-grid">
       <a href="https://app.vx.tools/leaderboards/income" target="_blank" rel="noopener" class="tool-card" data-cat="analytics" data-name="vortex income leaderboard earnings block revenue">
@@ -211,14 +211,6 @@ body::before {
         </div>
         <div class="tool-desc">Validator dashboard with custom analytics and rankings.</div>
         <div class="tool-builder community">1000X.sh Validator <span class="community-badge">community</span></div>
-      </a>
-      <a href="https://pools-adviser.lumlabs.io/" target="_blank" rel="noopener" class="tool-card" data-cat="analytics" data-name="pools adviser stake pool comparison delegators side by side">
-        <div class="tool-head">
-          <span class="tool-favicon-slot"></span>
-          <div class="tool-name">Pools Adviser</div>
-        </div>
-        <div class="tool-desc">Helps delegators choose where to stake by comparing stake pools and validators side by side.</div>
-        <div class="tool-builder community">Lum Labs Validator <span class="community-badge">community</span></div>
       </a>
       <a href="https://www.solfees.fyi/" target="_blank" rel="noopener" class="tool-card" data-cat="analytics" data-name="solfees priority fees per block historical breakdown">
         <div class="tool-head">
@@ -389,7 +381,7 @@ body::before {
   <div class="cat-header">
     <span class="cat-num">03</span>
     <span class="cat-title">Network Analytics</span>
-    <span class="cat-count">6 tools</span>
+    <span class="cat-count">7 tools</span>
   </div>
   <div class="tools-grid">
       <a href="https://sonda.network/" target="_blank" rel="noopener" class="tool-card" data-cat="network" data-name="sonda decentralization infrastructure metrics network solya validator">
@@ -440,6 +432,14 @@ body::before {
         <div class="tool-desc">Public live view of where SOL stake sits and where it is moving, native and liquid, with stake distribution and a stake map.</div>
         <div class="tool-builder community">Hubra Validator <span class="community-badge">community</span></div>
       </a>
+      <a href="https://www.pinestake.com/calendar" target="_blank" rel="noopener" class="tool-card" data-cat="network" data-name="pinestake epoch calendar historical slot times solana">
+        <div class="tool-head">
+          <span class="tool-favicon-slot"></span>
+          <div class="tool-name">Pinestake Epoch Calendar</div>
+        </div>
+        <div class="tool-desc">Historical Solana epoch and slot times in a calendar view.</div>
+        <div class="tool-builder community">Pine Stake Validator <span class="community-badge">community</span></div>
+      </a>
   </div>
 </section>
 
@@ -447,7 +447,7 @@ body::before {
   <div class="cat-header">
     <span class="cat-num">04</span>
     <span class="cat-title">Stake Pools &amp; LSTs</span>
-    <span class="cat-count">12 tools</span>
+    <span class="cat-count">13 tools</span>
   </div>
   <div class="tools-grid">
       <a href="https://stakeview.app/stakes" target="_blank" rel="noopener" class="tool-card" data-cat="pools" data-name="stakeview stake pools dashboard shinobi systems">
@@ -545,6 +545,14 @@ body::before {
         </div>
         <div class="tool-desc">Stake pool decentralization index: client, DoubleZero, and stake distribution analysis for the main pools.</div>
         <div class="tool-builder community">Tielman | Definity stake pool <span class="community-badge">community</span></div>
+      </a>
+      <a href="https://pools-advisor.lumlabs.io/" target="_blank" rel="noopener" class="tool-card" data-cat="pools" data-name="pools advisor lumlabs validators delegation eligibility staking pools criteria earnings">
+        <div class="tool-head">
+          <span class="tool-favicon-slot"></span>
+          <div class="tool-name">Pools Advisor</div>
+        </div>
+        <div class="tool-desc">Decision-support tool for validators: check eligibility across 13 staking pools, compare delegation criteria, and estimate stake potential and projected earnings.</div>
+        <div class="tool-builder community">Lum Labs Validator <span class="community-badge">community</span></div>
       </a>
   </div>
 </section>
@@ -815,7 +823,7 @@ body::before {
   <div class="cat-header">
     <span class="cat-num">08</span>
     <span class="cat-title">Alpenglow</span>
-    <span class="cat-count">10 tools</span>
+    <span class="cat-count">11 tools</span>
   </div>
   <div class="tools-grid">
       <a href="https://ag.validblocks.com/" target="_blank" rel="noopener" class="tool-card" data-cat="alpenglow" data-name="alpenglow validblocks explorer block community cluster 2026">
@@ -897,6 +905,14 @@ body::before {
         </div>
         <div class="tool-desc">Voting performance metrics for the Alpenglow test cluster: how often each validator contributes to fast finalization and votes in line with the final slot outcome.</div>
         <div class="tool-builder community">Puffin Validator <span class="community-badge">community</span></div>
+      </a>
+      <a href="https://ag.validblocks.com/live" target="_blank" rel="noopener" class="tool-card" data-cat="alpenglow" data-name="validblocks ag live feed alpenglow leader schedule high load">
+        <div class="tool-head">
+          <span class="tool-favicon-slot"></span>
+          <div class="tool-name">ValidBlocks AG Live</div>
+        </div>
+        <div class="tool-desc">Live feed of the Alpenglow test cluster with a leader schedule, useful to watch under high load.</div>
+        <div class="tool-builder community">Valid Blocks Validator <span class="community-badge">community</span></div>
       </a>
   </div>
 </section>
@@ -1146,6 +1162,8 @@ filterBtns.forEach(btn => {
     filterBtns.forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     activeCat = btn.dataset.cat;
+    // Keep the URL shareable: /tools#alpenglow etc. (no entry for All)
+    history.replaceState(null, '', activeCat === 'all' ? location.pathname + location.search : '#' + activeCat);
     update();
   });
 });
@@ -1154,6 +1172,19 @@ search.addEventListener('input', e => {
   searchVal = e.target.value.toLowerCase().trim();
   update();
 });
+
+// Category deep-linking: opening /tools#alpenglow (or changing the hash) selects that category
+function applyHashCategory() {
+  const cat = location.hash.replace('#', '').toLowerCase();
+  const btn = [...filterBtns].find(b => b.dataset.cat === cat);
+  if (!btn) return;
+  filterBtns.forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  activeCat = cat;
+  update();
+}
+window.addEventListener('hashchange', applyHashCategory);
+applyHashCategory();
 
 document.querySelectorAll('.tool-favicon-slot').forEach(slot => {
   const card = slot.closest('.tool-card');
